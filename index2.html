@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="game.css"> -->
+</head>
+<body class="body" style="background-image: url('water.jpg');background-repeat: no-repeat; background-size: cover;  background-position: center; margin-bottom: 100%; transition-duration: 3s;">
+    
+</body>
+<script>
+    var body = document.querySelector(".body");
+    setTimeout(function(){
+        document.querySelector(".body").style.backgroundImage="url('giphy.webp')"
+        body.style.backgroundSize="cover";
+        body.style.backgroundRepeat="repeat";
+        // body.style. marginBottom="100%";
+        setTimeout(function(){
+        window.location.href="play.html";
+
+        }, 4000)
+    },4000);
+</script>
+</html>
