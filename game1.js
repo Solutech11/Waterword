@@ -382,7 +382,7 @@
             }
 
             function plat() {
-                var mut = new Audio('The-Weeknd-Ft-Daft-Punk-Starboy-01.mp3');
+                var mut = new Audio('Yanni_Ethnicity.mp3');
                 mut.play();
             }
 

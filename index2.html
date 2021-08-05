@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="game.css"> -->
 </head>
-<body class="body" style="background-image: url('water.jpg');background-repeat: no-repeat; background-size: cover;  background-position: center; margin-bottom: 100%; transition-duration: 3s;">
+<body class="body" style="background-image: url('water.jpg');background-repeat: no-repeat; background-size: cover;  background-position: center; margin-bottom: 100%; transition-duration: 3s;" onload="plat()">
     
 </body>
 <script>
@@ -22,5 +22,11 @@
 
         }, 4000)
     },4000);
+
+
+                function plat() {
+                var mut = new Audio('Yanni_Ethnicity.mp3');
+                mut.play();
+            }
 </script>
 </html>

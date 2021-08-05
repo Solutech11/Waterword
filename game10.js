@@ -129,9 +129,9 @@
                     window.location.href = "#"
                 });
 
-                pagelinking(backLoseBtn, "#");
-                pagelinking(replayLoseBtn, "game.html");
-                pagelinking(homelose, "#")
+                pagelinking(backLoseBtn, "game9.html");
+                pagelinking(replayLoseBtn, "game10.html");
+                pagelinking(homelose, "play.html")
 
 
                 // characterone.innerHTML
@@ -394,4 +394,10 @@
             function play() {
                 var audio = new Audio('water-droplet-1.mp3');
                 audio.play();
+            }
+
+
+            function plat() {
+                var mut = new Audio('Yanni_Ethnicity.mp3');
+                mut.play();
             }

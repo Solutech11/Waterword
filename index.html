@@ -41,7 +41,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onload="plat()">
         <div class="main">
             <img src="Untitled-1.png" class="img">
         </div>
@@ -50,6 +50,12 @@
             setTimeout(function(){
                 window.location.href="index2.html";
             }, 4000);
+
+
+                        function plat() {
+                var mut = new Audio('Yanni_Ethnicity.mp3');
+                mut.play();
+            }
         </script>
     </body>
 </html>

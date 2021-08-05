@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,54 @@
     <title>Scene</title>
     <link rel="stylesheet" href="game.css">
 </head>
+
 <body>
     <div class="scenes">
         <button class="back"><img src="backbtn.png" alt="back"></button>
         <h2>SCENES</h2>
-            <button class="sceneone">SCENE I</button>
-            <button class="scenetwo">SCENE II</button>
-            <button class="scenethree">SCENE III</button>
+        <button class="sceneone">SCENE I</button>
+        <button class="scenetwo">SCENE II</button>
+        <button class="scenethree">SCENE III</button>5
+        <!-- <div class="sub"> -->
+        <!-- <a href="setting.html"><button class="settings"><img src="settings.gif" alt="#"></button></a> -->
+
+        <!-- </div> -->
     </div>
-  <script>
-      //Button
-      var scene1= document.querySelector(".sceneone"),
-          scene2= document.querySelector(".scenetwo"),
-          scene3= document.querySelector(".scenethree"),
-          back= document.querySelector(".back");
+    <script>
+        //Button
+        var scene1 = document.querySelector(".sceneone"),
+            scene2 = document.querySelector(".scenetwo"),
+            scene3 = document.querySelector(".scenethree"),
+            back = document.querySelector(".back");
 
-          var levelStorage= parseInt(localStorage.getItem("waterLevel"));
+        var levelStorage = parseInt(localStorage.getItem("waterLevel"));
 
-scenebutton(scene1, "level.html");
-if(levelStorage>=11){
-   scenebutton(scene2, "Scene 2/level.html");
-}else{
-    notReady(scene2)
-}
-if (levelStorage>=21) {
-   scenebutton(scene3, "scene 3/level.html");    
-}else{
-    notReady(scene3)
+        scenebutton(scene1, "level.html");
+        if (levelStorage >= 11) {
+            scenebutton(scene2, "Scene 2/level.html");
+        } else {
+            notReady(scene2)
+        }
+        if (levelStorage >= 21) {
+            scenebutton(scene3, "scene 3/level.html");
+        } else {
+            notReady(scene3)
 
-}
-scenebutton(back, "play.html");
+        }
+        scenebutton(back, "play.html");
 
-     //for the functions
-     function scenebutton(buttons, thelevellink){
-         buttons.addEventListener("click", function(){
-             window.location.href= thelevellink
-         })
-     }
+        //for the functions
+        function scenebutton(buttons, thelevellink) {
+            buttons.addEventListener("click", function() {
+                window.location.href = thelevellink
+            })
+        }
 
-     function notReady(buttons){
-         buttons.style.backgroundColor="grey";
-         buttons.style.opacity= "50%"
-     }
-  </script>
+        function notReady(buttons) {
+            buttons.style.backgroundColor = "grey";
+            buttons.style.opacity = "50%"
+        }
+    </script>
 </body>
+
 </html>

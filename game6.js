@@ -115,9 +115,9 @@
                     window.location.href = "#"
                 });
 
-                pagelinking(backLoseBtn, "#");
-                pagelinking(replayLoseBtn, "game.html");
-                pagelinking(homelose, "#")
+                pagelinking(backLoseBtn, "game5.html");
+                pagelinking(replayLoseBtn, "game6.html");
+                pagelinking(homelose, "play.html")
 
 
                 // characterone.innerHTML
@@ -268,9 +268,9 @@
                             wordmatch = Word1 + Word2 + Word3 + Word4 + Word5 + Word6;
 
                             if (wordmatch === theWord) {
-                                if(parseInt(localStorage.getItem("waterLevel"))<7){
+                                if (parseInt(localStorage.getItem("waterLevel")) < 7) {
                                     localStorage.setItem("waterLevel", "7")
-                                    }
+                                }
                                 winDiv.style.display = "flex";
 
                                 pauseBtnm.disabled = true;
@@ -364,4 +364,10 @@
             function play() {
                 var audio = new Audio('water-droplet-1.mp3');
                 audio.play();
+            }
+
+
+            function plat() {
+                var mut = new Audio('Yanni_Ethnicity.mp3');
+                mut.play();
             }

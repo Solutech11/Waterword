@@ -309,3 +309,13 @@ body {
     height: 20vw;
     width: 23%;
 }
+
+.replaylose {
+    color: white;
+    font-size: 5vw;
+}
+
+.homelose {
+    color: white;
+    font-size: 5vw;
+}
